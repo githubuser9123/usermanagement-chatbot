@@ -1,0 +1,38 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: application_access
+  - action: access_form
+  - active_loop: access_form
+  - active_loop: null
+
+- story: custom UI - happy path
+  steps:
+  - intent: get_started
+  - action: utter_get_started
+  - intent: application_access
+  - action: access_form
+  - active_loop: access_form
+  - active_loop: null
+
+- story: custom UI - happy path
+  steps:
+  - intent: reset_chat
+  - action: action_reset_chat
+
+- story: Open Requests
+  steps:
+  - intent: open_request
+  - action: action_open_request
+  - intent: deny
+  - action: action_accept_deny
+
+- story: Affirm or Deny
+  steps:
+  - intent: accept
+  - action: action_accept_deny

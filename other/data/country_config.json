@@ -1,0 +1,109 @@
+[{
+  "application": "veeva",
+  "auth_hr4u_url": "https://merckk-sandbox.plateau.com/learning/oauth-api/rest/v1/token",
+  "hr4u_url": "https://merckk-sandbox.plateau.com/learning/odatav4/public/admin/curriculum-service/v1/UserCurriculumStatuses?",
+  "esign_agreement_url": "https://api.eu1.adobesign.com/api/rest/v6/agreements",
+  "esign_key": "3AAABLblqZhC-6f1s0AG5xTFp15Ae7yy4-q2HVHyAKrvuVucgt0qM3gUC0IlJlLwlbbqsh0Q8XlOx7JVCCLxRRtnXt6GHJA2n",
+  "user_name": "merckk-sbx",
+  "password": "d631972765e9f073504ee0b97e0af7eb9287c725c811331e0e8a45dc9fe1cc5b43f3c85d8c517ab99c7503e2235ac5cc",
+  "veeva_auth_url": "https://sb-merckgroup-merck-rim-sbx-pdr2.veevavault.com/api/v20.3/auth",
+  "veeva_username": "RPA1@sb-merckgroup.com",
+  "veeva_password": "Wait@gate101",
+  "veeva_createuser_url": "https://sb-merckgroup-merck-rim-sbx-pdr2.veevavault.com/api/v20.2/objects/users",
+  "snow_url": "https://wind.service-now.com/api/x_mkgaa_gti/gti_rest/create_request?",
+  "snow_username": "s114241",
+  "snow_password": "Prague@0710",
+  "security_profile": {"Merck Document User/Partner": "copy_of_document_user__c", "Template Manager": "template_manager__c", "Publisher": "publisher__c"},
+  "hr4u_circulum_data": {
+    "grant_type": "client_credentials",
+    "scope":
+        {
+            "userId": "S115966",
+            "companyId": "merckk-sbx",
+            "userType": "admin",
+            "resourceType": "learning_public_api"}},
+  "responses": {
+    "request_application": {
+      "text": "Please select the application",
+      "buttons": [
+        {
+          "payload": "Breeze",
+          "title": "Breeze"
+        },
+        {
+          "payload": "Eladorado",
+          "title": "Eladorado"
+        }]
+    },
+    "request_subsystem": {
+      "text": "Please select the sub-application",
+      "buttons": [{ "payload": "RIMS",  "title": "RIMS"}, { "payload": "Total Safety",  "title": "Total Safety"}]
+    },
+    "request_role": {
+      "text": "Please select a role",
+      "buttons": [
+        {
+          "payload": "Merck Document User/Partner",
+          "title": "Merck Document User/Partner"
+        },
+        {
+          "payload": "Template Manager",
+          "title": "Template Manager"
+        },
+        {
+          "payload": "Publisher",
+          "title": "Publisher"
+        }
+      ]
+    },
+    "request_line_manager": {
+      "text": "Please enter the line manager email Id"
+    },
+    "request_muid": {
+      "text": "Please enter your MUID"
+    },
+    "request_email": {
+      "text": "Please enter your email Id"
+    },
+    "await_response": {
+      "text": "Please wait while I retrieve the information"
+    },
+    "training_completed": {
+      "text": "We have noticed that you've completed your training. Would you like to fill the user detail for the account creation",
+      "buttons": [{"payload": "Yes", "title": "Yes"}, {"payload": "No", "title": "No"}]
+    },
+    "training_inprogress": {
+      "text": "I am unable to process your request as the training has not been completed."
+    },
+    "api_issue": {
+      "text": "I am unable to process your request right now. Please try again later."
+    },
+    "approval_inprogress": {
+      "text": "The Esign request has not been approved, please wait until the request is approved. You can continue your request later by typing 'Open Requests'."
+    },
+    "create_user": {
+      "text": "We have created the user. You will get an email with the credentials."
+    },
+    "training_information": {
+      "text": "Please finish the following Training in HR4U to get access to the application<br>• DEV0401<br>Once you have completed your training, you can continue the request by typing \"Open Requests\""
+    },
+    "initiate_esign": {
+      "text": "We have triggered the esign workflow once approved we will create the user. You can continue your request by typing \"Open Requests\"."
+    },
+    "no_open_request": {
+      "text": "Hi, I don't see any request raised against your email Id. You can start by type 'Access Request'."
+    },
+    "open_request": {
+      "text": "Hi, I can see that you have initiated the application access request. Have you completed the training or has you esign request been approved.",
+      "buttons": [{"payload": "Yes", "title": "Yes"}, {"payload": "No", "title": "No"}]
+    },
+    "template_triggered": {
+      "text": "We have triggered the esign workflow once approved we will create the user. You can continue your request by typing \"Open Requests\".",
+      "buttons": [{"payload": "Yes", "title": "Yes"}, {"payload": "No", "title": "No"}]
+    },
+    "api_failure": {
+      "text": "The system is down, please try again after some time"
+    }
+  }
+}
+]

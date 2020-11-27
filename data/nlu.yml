@@ -1,0 +1,36 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+
+- intent: application_access
+  examples: |
+    - Requesting access to an application
+    - need access to an application
+    - application access required
+    - access request to an application
+
+- intent: open_request
+  examples: |
+    - My Open Requests
+    - Open Requests
+    - Requests
+
+- intent: accept
+  examples: |
+    - Yes
+    - yes, you can
+    - absolutely
+
+- intent: deny
+  examples: |
+    - No
+    - No, I don't want to
+    - Never

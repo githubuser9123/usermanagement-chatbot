@@ -1,0 +1,53 @@
+version: "2.0"
+
+actions: 
+  - action_reset_chat
+  - validate_access_form
+  - action_open_request
+  - action_accept_deny
+  - action_create_user
+forms: 
+  - access_form
+
+intents:
+  - get_started
+  - greet
+  - application_access
+  - reset_chat
+  - open_request
+  - accept
+  - deny
+
+responses:
+  utter_greet:
+  - text: "Hello! How can I help you.?"
+
+  utter_get_started:
+  - text: "Hello, My name is Randy, I’m an R&D Bot developed and trained by your R&D Informatics team."
+
+slots: 
+  application:
+    auto_fill: false
+    type: unfeaturized
+  subsystem:
+    auto_fill: false
+    type: unfeaturized
+  role:
+    auto_fill: false
+    type: unfeaturized
+  line_manager:
+    auto_fill: false
+    type: unfeaturized
+  muid:
+    auto_fill: false
+    type: unfeaturized
+  email:
+    auto_fill: false
+    type: unfeaturized
+  open_request:
+    auto_fill: false
+    type: unfeaturized
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
